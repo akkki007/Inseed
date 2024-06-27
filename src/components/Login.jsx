@@ -11,6 +11,7 @@ const Login = () => {
               Username
             </label>
             <input
+            
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="username"
               type="text"
@@ -54,7 +55,7 @@ const Login = () => {
           </div>
           <p className="text-center text-white-500 text-xs mt-4">
             Not a member ? 
-            <Link className="text-blue-500 hover:text-blue-800" to="/register">Register</Link>
+            <Link className="text-blue-500 hover:text-blue-800" to="/registration">Register</Link>
           </p>
         </form>
       </div>
