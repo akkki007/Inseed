@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 const Home = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
+    <Navbar/>
       <main className="flex-grow container mx-auto py-8 px-4">
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-1/2">

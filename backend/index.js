@@ -7,24 +7,24 @@ const bodyParser = require("body-parser");
 app.use(cors());
 app.use(bodyParser.json());
 
-const uri =
-  "mongodb+srv://akshay:akshay2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
+const uri = "mongodb+srv://akshay:akshay2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
 
 async function register(data) {
-  const client = new MongoClient(uri);
+  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
   try {
     await client.connect();
     await createListing(client, {
-      name: `${data.name}`,
-      email: `${data.email}`,
-      password: `${data.password}`,
-      address: `${data.address}`,
+        name: `${data.name}`,
+        email: `${data.email}`,
+        password: `${data.password}`,
+        address: `${data.address}`,
     });
   } catch (e) {
     console.error(e);
+    throw new Error('Registration failed');
   } finally {
     await client.close();
-    console.log("connection closed");
+    console.log("Connection closed");
   }
 }
 
@@ -33,13 +33,12 @@ async function login(data) {
   try {
     await client.connect();
     const user = await compareListing(client, {
-      email : `${data.email}`,
-      password: `${data.password}`,     
+        email : `${data.email}`,
+        password: `${data.password}`, 
     });
-    return user != null; // Return true if user is found, false otherwise
+    return user != null; 
   } catch (e) {
     console.error(e);
-    return false;
   } finally {
     await client.close();
   }
@@ -50,18 +49,15 @@ async function createListing(client, newListing) {
     .db("Users_registration")
     .collection("users")
     .insertOne(newListing);
-  console.log(
-    `New listing created with the following id: ${result.insertedId}`
-  );
+  console.log(`New listing created with the following id: ${result.insertedId}`);
 }
 
-async function compareListing(client, compareListing) {
+async function compareListing(client, findListing) {
   const result = await client
     .db("Users_registration")
     .collection("users")
-    .findOne({email : compareListing.email,password : compareListing.password});
-    console.log(result);
-    return result
+    .findOne({ email: findListing.email, password: findListing.password });
+  return result;
 }
 
 app.post("/registration", (req, res) => {
@@ -81,5 +77,5 @@ app.post("/login", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
+  console.log("Server is running on port 3000");
 });
