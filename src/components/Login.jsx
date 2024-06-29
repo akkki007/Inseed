@@ -1,21 +1,52 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { useState } from 'react';
 const Login = () => {
+  const [form, setForm] = useState({});
+  const [message, setMessage] = useState("");
+
+  const handleForm = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        const response = await fetch('http://localhost:3000/login', {
+            method: 'POST',
+            body: JSON.stringify(form),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        const data = await response.json();
+        if (response.ok) {
+            setMessage('Login successful!');
+        } else {
+            setMessage(data.message || 'Login failed. Please try again.');
+        }
+    } catch (error) {
+        setMessage('An error occurred. Please try again.');
+    }
+    
+  };
   return (
     <div className="h-[90vh]   flex items-center justify-center bg-[gray]-100  text-white">
       <div className="w-[70vh] rounded-sm max-w-s ">
-        <form className=" shadow-md  bg-[#176A79] rounded-[20px] px-8 pt-9 pb-10 mb-10">
+        <form onSubmit={handleForm} className=" shadow-md  bg-[#176A79] rounded-[20px] px-8 pt-9 pb-10 mb-10">
           <h2 className="mb-4 text-xl text-center font-bold">Login</h2>
-          <div className="mb-4 ">
-            <label className="  block  text-sm font-bold mb-2 text-white" htmlFor="username">
-              Username
+          <div className="mb-4">
+            <label className="block  text-sm font-bold mb-2 text-white">
+              Email
             </label>
             <input
-            
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="username"
+              name='email'
+              onChange={handleSubmit}
               type="text"
-              placeholder="Enter your username"
+              placeholder="Enter your registered email"
             />
           </div>
           <div className="mb-6">
@@ -24,7 +55,8 @@ const Login = () => {
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="password"
+              name="password"
+              onChange={handleSubmit}
               type="password"
               placeholder="Enter your password"
             />
@@ -53,10 +85,8 @@ const Login = () => {
               Submit
             </button>
           </div>
-          <p className="text-center text-white-500 text-xs mt-4">
-            Not a member ? 
-            <Link className="text-blue-500 hover:text-blue-800" to="/registration">Register</Link>
-          </p>
+          <h3 className="text-white text-[15px] mx-[130px] w-[300px]">Not a member ? <Link className="hover:text-sky-400 hover:border-b-2 hover:border-sky-400" to={"/registration"}>Register</Link></h3>
+        { message && <p className="text-red-500 text-xs italic">{message}</p> }
         </form>
       </div>
     </div>
