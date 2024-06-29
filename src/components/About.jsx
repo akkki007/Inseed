@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 const About = () => {
   return (
     <>
+    <div dangerouslySetInnerHTML={{__html:index.html}}/>
       <div className="container w-screen">
         <Navbar></Navbar>
         <div className="img w-screen">
