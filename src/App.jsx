@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Placements from "./components/Placements";
 import Registration from "./components/Registration";
 import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <>
@@ -22,3 +23,4 @@ function App() {
 }
 
 export default App;
+ 
