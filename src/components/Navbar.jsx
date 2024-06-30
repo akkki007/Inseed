@@ -1,8 +1,14 @@
 // src/components/Navbar.js
-import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+  
+  const navigate = useNavigate();
+
+  const scrollHandler = (sectionId) => {
+    navigate(`/about#${sectionId}`);
+  };
+
   return (
     <nav className="bg-gray-800 p-4 w-screen">
       <div className="container mx-auto flex justify-between items-center">
@@ -32,12 +38,10 @@ const Navbar = () => {
             <Link to="/About" className="text-white hover:text-gray-300">
               About Us
               <div className="content  bg-gray-700 text-white absolute shadow-md shadow-black hover:block">
-              <a className='block pl-2 pr-2 pt-2  hover:text-gray-300' href="">Administration</a>
+              <div className='block pl-2 pr-2 pt-2 hover:text-gray-300' onClick={() => scrollHandler('administration')}>Administration</div>
               <a className='block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300'href="">History</a>
-              <a className='block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300'href="">Citizen Charter</a>
-              <a className='block pl-2 pr-2 pb-1 pt-1 hover:text-gray-300'href="">Message from Principal</a>
+              <a className='block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300'href="https://www.drishtiias.com/pdf/1670230884.pdf">Citizen Charter</a>
               <a className='block pl-2 pr-2 pb-1 pt-1 hover:text-gray-300'href="">Mission and Vission</a>
-              <a className='block pl-2 pr-2 pb-1 pt-1 hover:text-gray-300'href="">Right To imformation Act</a>
 
 
 
