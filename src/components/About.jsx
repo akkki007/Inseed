@@ -1,20 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-
 const About = () => {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      const element = document.getElementById(hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [hash]);
-
   return (
     <>
       <div className="container w-screen">
@@ -99,7 +85,7 @@ const About = () => {
             <br />
             <br />
 
-            <div  className="container mx-auto px-4">
+            <div className="container mx-auto px-4">
               <div className="row">
                 {/* <!-- Here begin Main Content --> */}
                 <div className="col-md-12">
@@ -107,7 +93,10 @@ const About = () => {
                     <div className="col-md-12">
                       <br />
                       <div className="course-details clearfix pb-0">
-                        <h3 id="administration" className="course-post-title text-[#003a6a] mb-0 text-3xl p-2">
+                        <h3
+                          id="administration"
+                          className="course-post-title text-[#003a6a] mb-0 text-3xl p-2"
+                        >
                           Administration
                         </h3>
                         <hr />
@@ -323,9 +312,7 @@ const About = () => {
                                   <td className="p-6 text-sm">
                                     <center>13</center>
                                   </td>
-                                  <td className="p-6 text-sm">
-                                    SC-ST Cell
-                                  </td>
+                                  <td className="p-6 text-sm">SC-ST Cell</td>
                                   <td className="p-6 text-sm">
                                     Prof. P. D. Wani
                                   </td>
@@ -396,7 +383,9 @@ const About = () => {
                                   <td className="p-6 text-sm">
                                     <center>18</center>
                                   </td>
-                                  <td className="p-6 text-sm">Vishakha Samiti</td>
+                                  <td className="p-6 text-sm">
+                                    Vishakha Samiti
+                                  </td>
                                   <td className="p-6 text-sm">
                                     Prof. U. G. Kawade
                                   </td>
@@ -421,8 +410,8 @@ const About = () => {
               </div>
               {/* <!-- /.End of row div --> */}
             </div>
-            
-            <div id="administration" className="history">
+
+            <div id="history" className="history">
               <h1 className="course-post-title text-[#003a6a] mt-4 mb-2 text-3xl p-2">
                 History
               </h1>
@@ -448,7 +437,7 @@ const About = () => {
             </div>
             <br />
             <br />
-            <div className="mission text-center">
+            <div id="mission-and-vision" className="mission text-center">
               <h1 className="course-post-title text-[#003a6a] mb-0 text-3xl p-2">
                 Vission
               </h1>
@@ -472,9 +461,7 @@ const About = () => {
                 <li>Continuous development of faculty & staff.</li>
               </ol>
               <br /> <br />
-
             </div>
-            
           </div>
 
           <div className="rightText w-1/3 mx-3 my-2 bg-white pl-2 pr-2">
@@ -489,8 +476,8 @@ const About = () => {
               />
             </div>
             <p>
-              It gives me immense pride and pleasure to welcome you to our
-              5   college which aims at transforming young minds into competent
+              It gives me immense pride and pleasure to welcome you to our 5
+              college which aims at transforming young minds into competent
               engineers. Our dedicated faculty, industry-oriented curriculum,
               and state-of-the-art facilities create an ideal environment for
               learning and innovation. We believe in holistic development and
@@ -505,45 +492,141 @@ const About = () => {
               knowledge, growth, and excellence.
             </p>
             <br />
-            <p className="text-right font-bold">- Dr. [Principal Name]</p>
-
-            <div className="gallery overflow-y-scroll h-96 space-y-2 p-4">
-  <img src="public/galleryImage/g1.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g2.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g3.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g4.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g5.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g6.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g7.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g8.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g9.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g10.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g11.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g12.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g13.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g14.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g15.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g16.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g17.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g18.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g19.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g20.jpeg" alt="image" className="hover:opacity-75" />
-  <img src="public/galleryImage/g21.jpeg" alt="image" className="hover:opacity-75" />
-
-</div>
-
+            <p className="text-right font-bold">- Dr. [Travis Head]</p>
+            <div className="gallery">
+              <h1 className="course-post-title text-[#003a6a] mb-0 text-3xl p-2">
+                Gallery
+              </h1>
+              <div className="image overflow-auto touch-y max-h-96 space-y-2 p-4">
+                <img
+                  src="public/galleryImage/g1.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g2.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g3.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g4.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g5.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g6.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g7.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g8.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g9.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g10.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g11.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g12.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g13.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g14.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g15.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g16.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g17.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g18.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g19.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g20.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+                <img
+                  src="public/galleryImage/g21.jpeg"
+                  alt="image"
+                  className="hover:opacity-75"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <footer className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">© 2024 College Name. All rights reserved.</p>
-          <p className="text-sm">
-            <a href="/about" className="hover:underline">About</a> | 
-            <a href="/contact" className="hover:underline"> Contact</a> | 
-            <a href="/privacy" className="hover:underline"> Privacy Policy</a>
-          </p>
-        </div>
-      </footer>
+          <div className="container mx-auto text-center">
+            <p className="text-sm">© 2024 College Name. All rights reserved.</p>
+            <p className="text-sm">
+              <a href="/about" className="hover:underline">
+                About
+              </a>{" "}
+              |
+              <a href="/contact" className="hover:underline">
+                {" "}
+                Contact
+              </a>{" "}
+              |
+              <a href="/privacy" className="hover:underline">
+                {" "}
+                Privacy Policy
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
     </>
   );

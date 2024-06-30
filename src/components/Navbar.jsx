@@ -1,14 +1,7 @@
 // src/components/Navbar.js
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
-  
-  const navigate = useNavigate();
-
-  const scrollHandler = (sectionId) => {
-    navigate(`/about#${sectionId}`);
-  };
-
   return (
     <nav className="bg-gray-800 p-4 w-screen">
       <div className="container mx-auto flex justify-between items-center">
@@ -33,24 +26,41 @@ const Navbar = () => {
               Registration
             </Link>
           </li>
-          <li>
-            <div className="drop">
-            <Link to="/About" className="text-white hover:text-gray-300">
-              About Us
-              <div className="content  bg-gray-700 text-white absolute shadow-md shadow-black hover:block">
-              <div className='block pl-2 pr-2 pt-2 hover:text-gray-300' onClick={() => scrollHandler('administration')}>Administration</div>
-              <a className='block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300'href="">History</a>
-              <a className='block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300'href="https://www.drishtiias.com/pdf/1670230884.pdf">Citizen Charter</a>
-              <a className='block pl-2 pr-2 pb-1 pt-1 hover:text-gray-300'href="">Mission and Vission</a>
-
-
-
+          <li className="relative">
+            <div className="drop inline-block relative group">
+              <Link to="/about" className="text-white hover:text-gray-300">
+                About Us
+              </Link>
+              <div className="content bg-gray-700 text-white absolute shadow-md shadow-black hidden group-hover:block">
+                <a
+                  href="/about#administration"
+                  className="scroll-smooth block pl-2 pr-2 pt-2 hover:text-gray-300"
+                >
+                  Administration
+                </a>
+                <a
+                  href="/about#history "
+                  className="scroll-smooth block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300"
+                >
+                  History
+                </a>
+                <a
+                  href="https://www.drishtiias.com/pdf/1670230884.pdf"
+                  className="block pl-2 pr-2 pt-1 pb-1 hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Citizen Charter
+                </a>
+                <a
+                  href="/about#mission-and-vision"
+                  className="scroll-smoothblock pl-2 pr-2 pt-1 pb-1 hover:text-gray-300"
+                >
+                  Mission and Vision
+                </a>
               </div>
-            
-            </Link>
             </div>
           </li>
-          
         </ul>
         <div className="relative">
           <input
