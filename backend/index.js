@@ -7,21 +7,22 @@ const bodyParser = require("body-parser");
 app.use(cors());
 app.use(bodyParser.json());
 
-const uri = "mongodb+srv://akshay:akshay2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
+const uri =
+  "mongodb+srv://akshay:akshay2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
 
 async function register(data) {
-  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  const client = new MongoClient(uri);
   try {
     await client.connect();
     await createListing(client, {
-        name: `${data.name}`,
-        email: `${data.email}`,
-        password: `${data.password}`,
-        address: `${data.address}`,
+      name: `${data.name}`,
+      email: `${data.email}`,
+      password: `${data.password}`,
+      address: `${data.address}`,
     });
   } catch (e) {
     console.error(e);
-    throw new Error('Registration failed');
+    throw new Error("Registration failed");
   } finally {
     await client.close();
     console.log("Connection closed");
@@ -33,10 +34,10 @@ async function login(data) {
   try {
     await client.connect();
     const user = await compareListing(client, {
-        email : `${data.email}`,
-        password: `${data.password}`, 
+      email: `${data.email}`,
+      password: `${data.password}`,
     });
-    return user != null; 
+    return user != null;
   } catch (e) {
     console.error(e);
   } finally {
@@ -49,7 +50,9 @@ async function createListing(client, newListing) {
     .db("Users_registration")
     .collection("users")
     .insertOne(newListing);
-  console.log(`New listing created with the following id: ${result.insertedId}`);
+  console.log(
+    `New listing created with the following id: ${result.insertedId}`
+  );
 }
 
 async function compareListing(client, findListing) {
@@ -72,7 +75,9 @@ app.post("/login", async (req, res) => {
   if (loginSuccess) {
     res.json({ message: "Login successful" });
   } else {
-    res.status(401).json({ message: "Login failed. Incorrect username or password." });
+    res
+      .status(401)
+      .json({ message: "Login failed. Incorrect username or password." });
   }
 });
 
