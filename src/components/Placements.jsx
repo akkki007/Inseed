@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import college from '/college.png'
 import person from '/person.png'
 import CarouselComp from './Carousel'
@@ -8,7 +7,6 @@ import CarouselComp from './Carousel'
 const Placements = () => {
   return (
     <>
-      <Navbar />
       <div className='relative h-[650px]'>
         <img src={college} alt='' className='w-screen h-[665px]' />
         <div className='absolute top-0 left-0 mt-[150px] ml-[300px] w-3/5 h-1/2 flex items-center justify-center'>
