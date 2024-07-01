@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const { MongoClient } = require("mongodb");
-const bodyParser = require("body-parser");
-
+const bodyParser = require("body-parser")
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -14,12 +13,12 @@ async function register(data) {
   const client = new MongoClient(uri);
   try {
     await client.connect();
-    await createListing(client, {
-      name: `${data.name}`,
-      email: `${data.email}`,
-      password: `${data.password}`,
-      address: `${data.address}`,
-    });
+      await createListing(client, {
+        name: `${data.name}`,
+        email: `${data.email}`,
+        password: `${data.password}`,
+        address: `${data.address}`,
+      })
   } catch (e) {
     console.error(e);
     throw new Error("Registration failed");
