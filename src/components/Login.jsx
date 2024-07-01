@@ -13,6 +13,22 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  let hashPass = (pass) => {
+    return (
+      "hidng22" +
+      pass.slice(0, pass.length / 2) +
+      "nsgimag" +
+      pass.slice(pass.length / 2, pass.length) +
+      "bb23"
+    );
+  };
+  let handlepass = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: hashPass(e.target.value),
+    });
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -67,7 +83,7 @@ const Login = () => {
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                 name="password"
-                onChange={handleForm}
+                onChange={handlepass}
                 type="password"
                 required
                 placeholder="Enter your password"

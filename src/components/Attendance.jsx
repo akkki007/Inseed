@@ -228,7 +228,7 @@ function Attendance() {
           </li>
         </ul>
       </div>
-      <div className="flex-1 p-4">
+      <div className="flex-1 p-4 h-full overflow-scroll">
         <div className="flex justify-between mb-4">
           <h2 className="text-2xl font-bold">Attendance</h2>
           {showDetails ? (

@@ -14,6 +14,22 @@ const Registration = () => {
     });
   };
 
+  let hashPass = (pass) => {
+    return (
+      "hidng22" +
+      pass.slice(0, pass.length / 2) +
+      "nsgimag" +
+      pass.slice(pass.length / 2, pass.length) +
+      "bb23"
+    );
+  };
+
+  const handlePassword = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: hashPass(e.target.value),
+    });
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     setRegister(false);
@@ -87,7 +103,7 @@ const Registration = () => {
               type="password"
               required
               placeholder="Enter a password"
-              onChange={handleInputs}
+              onChange={handlePassword}
             />
             <label className="block text-md font-semibold mb-2 pt-2 text-white">
               Re-enter your password
