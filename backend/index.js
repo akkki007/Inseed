@@ -7,10 +7,10 @@ const bodyParser = require("body-parser");
 app.use(cors());
 app.use(bodyParser.json());
 
-const uri = "mongodb+srv://akshay:akshay2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
+const uri = "mongodb+srv://snigdha:snigdha2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
 
 async function register(data) {
-  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  const client = new MongoClient(uri);
   try {
     await client.connect();
     await createListing(client, {
