@@ -74,7 +74,7 @@ const Login = () => {
                 onChange={handleForm}
                 type="email"
                 required
-                placeholder="Enter your registered email"
+                placeholder="john@xyz.com"
               />
 
               <label className="block text-md font-bold mb-2 pt-3">

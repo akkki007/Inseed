@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const uri =
-  "mongodb+srv://<username>:<password>@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
+  "mongodb+srv://rohanwani10032006:rohan2006@inseed.tp8jrqt.mongodb.net/?retryWrites=true&w=majority&appName=Inseed";
 
 async function register(data) {
   const client = new MongoClient(uri, {

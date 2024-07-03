@@ -32,6 +32,11 @@ const Navbar = () => {
               Registration
             </Link>
           </li>
+          <li>
+            <Link to="/Alumini" className="text-white hover:text-gray-300">
+              Alumini
+            </Link>
+          </li>
         </ul>
         <div className="relative">
           <input
