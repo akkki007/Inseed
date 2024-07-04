@@ -258,7 +258,7 @@ const Course = () => {
   }, [cname]);
   return (
     <>
-      <div className="w-full min-h-screen absolute bg-zinc-800 flex">
+     {course && <div className="w-full min-h-screen absolute bg-zinc-800 flex">
         <div className="h-[70%] w-[15%] pb-3 m-7 rounded-xl bg-white ">
           <h1 className="text-center text-white text-2xl p-3 w-full border rounded-xl border-white bg-[#1F2937]">
             Courses
@@ -369,6 +369,7 @@ const Course = () => {
           
         </div>
       </div>
+}
     </>
   );
 };
