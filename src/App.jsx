@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Placements from "./components/Placements";
-import Registration from "./components/Registration";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Placements from "./pages/Placements";
+import Registration from "./pages/Registration";
 import Navbar from "./components/Navbar";
-import Attendance from "./components/Attendance";
-import Dashboard from "./components/Dashboard";
+import Attendance from "./pages/Attendance";
+import Dashboard from "./pages/Dashboard";
+import Course from "./components/Course";
+
 function App() {
   return (
     <>
@@ -18,7 +20,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/placements" element={<Placements />} />
           <Route path="/registration" element={<Registration />} />
-          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/courses/:cname" element={<Course/>}/>
         </Routes>
       </Router>
     </>
@@ -26,4 +29,3 @@ function App() {
 }
 
 export default App;
- 
