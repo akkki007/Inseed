@@ -259,7 +259,7 @@ const Course = () => {
   return (
     <>
      {course && <div className="w-full min-h-screen absolute bg-zinc-800 flex">
-        <div className="h-[70%] w-[15%] pb-3 m-7 rounded-xl bg-white ">
+        <div className="h-[70%] w-auto pb-3 m-7 rounded-xl bg-white ">
           <h1 className="text-center text-white text-2xl p-3 w-full border rounded-xl border-white bg-[#1F2937]">
             Courses
           </h1>
@@ -269,19 +269,19 @@ const Course = () => {
                 <li className="hover:bg-orange-600 rounded-lg p-5 ">Computer</li>
               </Link>
               <Link to={`/courses/${courses[1].name}`}>
-                <li className="hover:bg-orange-600 rounded-lg p-5">Information Technology</li>
+                <li className="hover:bg-orange-600 rounded-lg p-5">IT</li>
               </Link>
               <Link to={`/courses/${courses[2].name}`}>
-                <li className="hover:bg-orange-600 rounded-lg p-5">Mechanical Engineering</li>
+                <li className="hover:bg-orange-600 rounded-lg p-5">Mechanical</li>
               </Link>
               <Link to={`/courses/${courses[3].name}`}>
-                <li className="hover:bg-orange-600 rounded-lg p-5">{courses[3].name}</li>
+                <li className="hover:bg-orange-600 rounded-lg p-5">Metallurgy</li>
               </Link>
               <Link to={`/courses/${courses[4].name}`}>
-                <li className="hover:bg-orange-600 rounded-lg p-5">{courses[4].name}</li>
+                <li className="hover:bg-orange-600 rounded-lg p-5">Civil</li>
               </Link>
               <Link to={`/courses/${courses[5].name}`}>
-                <li className="hover:bg-orange-600 rounded-lg p-5 ">{courses[5].name}</li>
+                <li className="hover:bg-orange-600 rounded-lg p-5 ">ENTC</li>
               </Link>
               <Link to={`/courses/${courses[6].name}`}>
                 <li className="hover:bg-orange-600 rounded-lg p-5">{courses[6].name}</li>

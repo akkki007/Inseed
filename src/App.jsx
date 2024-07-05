@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Attendance from "./pages/Attendance";
 import Dashboard from "./pages/Dashboard";
 import Course from "./components/Course";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/login" element={<Login />} />
           <Route path="/placements" element={<Placements />} />
+          <Route path="/About" element={<About/>}/>
           <Route path="/registration" element={<Registration />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/courses/:cname" element={<Course />} />
-          <Route path="/courses/Computer%20Engineering" element={<Course/>}/>
         </Routes>
       </Router>
     </>

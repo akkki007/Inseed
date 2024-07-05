@@ -54,6 +54,42 @@ const Navbar = () => {
                     Electrical Engineering
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/courses/Electrical%20Engineering"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                    Civil Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/courses/Electrical%20Engineering"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                    E&TC Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/courses/Electrical%20Engineering"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                    Information Technology
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/courses/Electrical%20Engineering"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                    AI and Ml
+                  </Link>
+                </li>
               </ul>
             )}
           </li>

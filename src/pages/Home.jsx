@@ -13,6 +13,7 @@ import civilImage from "/civil.jpg";
 import entcImage from "/entc.jpg";
 import electricalImage from "/electrical.jpg";
 import aimlImage from "/aiml.jpg";
+import LazyLoad from "react-lazyload";
 
 const images = [harvard1, harvard2, harvard3];
 
@@ -71,7 +72,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000);
+    }, 100000);
 
     return () => clearInterval(interval);
   }, []);
@@ -224,11 +225,14 @@ const Home = () => {
                 key={index}
                 className="max-w-xs rounded overflow-hidden shadow-lg my-2 bg-white hover:scale-110 hover:bg-[#1F2937] hover:text-white hover:transition-all"
               >
+                <LazyLoad offset={100}>
                 <img
                   className="w-80 h-48"
                   src={course.image}
                   alt={course.name}
                 />
+                </LazyLoad>
+                
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">{course.name}</div>
                   <p className=" text-base h-[72px]">{course.description}</p>
