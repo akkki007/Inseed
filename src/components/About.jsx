@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 const About = () => {
   return (
     <>
       <div className="container w-screen">
+        <Navbar />
         <div className="img w-screen flex">
           <img
             src="public/loyola-university-chicago-lakeshore-campus-2400x750.jpg"
@@ -41,7 +43,7 @@ const About = () => {
               </p>
               <br />
               The institute runs regular diploma programmes as:
-              <ul className="list-disc list-inside mx-5">
+              <ul className="list-disc list-inside">
                 <li>Diploma in Civil Engineering</li>
                 <li>Diploma in Electrical Engineering</li>
                 <li>Diploma in Electronic and Telecommunication</li>
@@ -58,7 +60,7 @@ const About = () => {
                 school (Affiliated to ASDC, New Delhi) Awards received by the
                 institute:
               </p>
-              <ul className="list-disc list-inside mx-5">
+              <ul className="list-disc list-inside">
                 <li>
                   'Best Polytechnic Award - 1998-99' by Government of
                   Maharashtra for consistent excellent performance in technical
@@ -413,7 +415,7 @@ const About = () => {
               <h1 className="course-post-title text-[#003a6a] mt-4 mb-2 text-3xl p-2">
                 History
               </h1>
-              <p className="mx-2">
+              <p>
                 {" "}
                 This institute was created by Board of Technical Education,
                 Maharashtra State, India. Government of Maharashtra granted
@@ -425,7 +427,7 @@ const About = () => {
                 current building.
               </p>
               <br />
-              <p className="mx-2">
+              <p>
                 The Institute also owns its own boat club next to College of
                 Engineering, Pune. They have fleet of many boats for students to
                 practice and participate in annual race called Regatta. Many
