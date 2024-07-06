@@ -6,6 +6,7 @@ import Placements from "./pages/Placements";
 import Registration from "./pages/Registration";
 import Navbar from "./components/Navbar";
 import Attendance from "./pages/Attendance";
+import Alumni from "./pages/Alumni";
 import Dashboard from "./pages/Dashboard";
 import Course from "./components/Course";
 
@@ -22,7 +23,8 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/courses/:cname" element={<Course />} />
-          <Route path="/courses/Computer%20Engineering" element={<Course/>}/>
+          <Route path="/courses/Computer%20Engineering" element={<Course />} />
+          <Route path="/Community" element={<Alumni />} />
         </Routes>
       </Router>
     </>
