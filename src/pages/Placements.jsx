@@ -364,29 +364,7 @@ const Placements = () => {
             <CarouselComp />
           </div>
         </div>
-      </div>
-
-      {/* footer part */}
-      <footer className="bg-gray-800 text-white py-4 ">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">© 2024 College Name. All rights reserved.</p>
-          <p className="text-sm">
-            <a href="/about" className="hover:underline">
-              About
-            </a>{" "}
-            |
-            <a href="/contact" className="hover:underline">
-              {" "}
-              Contact
-            </a>{" "}
-            |
-            <a href="/privacy" className="hover:underline">
-              {" "}
-              Privacy Policy
-            </a>
-          </p>
-        </div>
-      </footer>
+      </div> 
     </>
   );
 };

@@ -9,6 +9,7 @@ import Attendance from "./pages/Attendance";
 import Dashboard from "./pages/Dashboard";
 import Course from "./components/Course";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/courses/:cname" element={<Course />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

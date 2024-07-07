@@ -250,26 +250,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">
-            © 2024 Inseed University. All rights reserved.
-          </p>
-          <p className="text-sm">
-            <Link to="/about" className="hover:underline">
-              About
-            </Link>{" "}
-            |
-            <Link to="/contact" className="hover:underline">
-              Contact
-            </Link>{" "}
-            |
-            <Link to="/privacy" className="hover:underline">
-              Privacy Policy
-            </Link>
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

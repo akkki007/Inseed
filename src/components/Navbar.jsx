@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import React, { useState } from "react";
+import Logo from "/INSEED_logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,15 +11,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4 w-screen">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-gray-800 p-4 w-full">
+      <div className="container flex justify-between items-center px-10 h-12">
+        <div className="">
+        <img className="w-16 h-16 object-contain " src={Logo} alt="logo_images"></img>
+        </div>
         <ul className="flex space-x-4">
           <li>
-            <Link to="/" className="text-white hover:text-gray-300">
+            <Link to="/" className="text-white hover:text-gray-300 text-lg">
               Home
             </Link>
           </li>
-          <li className="relative">
+          <li className="relative text-lg">
             <button
               onMouseOver={toggleDropdown}
               className="text-white hover:text-gray-300 focus:outline-none"
@@ -94,22 +98,22 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <Link to="/About" className="text-white hover:text-gray-300">
+            <Link to="/About" className="text-white hover:text-gray-300 text-lg">
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/login" className="text-white hover:text-gray-300">
+            <Link to="/login" className="text-white hover:text-gray-300 text-lg">
               Login
             </Link>
           </li>
           <li>
-            <Link to="/placements" className="text-white hover:text-gray-300">
+            <Link to="/placements" className="text-white hover:text-gray-300 text-lg">
               Placements
             </Link>
           </li>
           <li>
-            <Link to="/registration" className="text-white hover:text-gray-300">
+            <Link to="/registration" className="text-white hover:text-gray-300 text-lg">
               Registration
             </Link>
           </li>
