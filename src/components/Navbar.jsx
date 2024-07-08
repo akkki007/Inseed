@@ -99,13 +99,18 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/login" className="text-white hover:text-gray-300">
-              Login
+            <Link to={"/Community"} className="text-white hover:text-gray-300">
+              Community
             </Link>
           </li>
           <li>
             <Link to="/placements" className="text-white hover:text-gray-300">
               Placements
+            </Link>
+          </li>
+          <li>
+            <Link to="/login" className="text-white hover:text-gray-300">
+              Login
             </Link>
           </li>
           <li>
