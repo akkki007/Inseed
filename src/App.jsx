@@ -10,6 +10,7 @@ import Alumni from "./pages/Alumni";
 import Dashboard from "./pages/Dashboard";
 import Course from "./components/Course";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/courses/:cname" element={<Course />} />
           <Route path="/Community" element={<Alumni />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

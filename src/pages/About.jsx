@@ -468,7 +468,7 @@ const About = () => {
             </h1>
             <div className="image flex justify-center items-center p-4">
               <img
-                src="public/high-school-principal.jpg"
+                src="/high-school-principal.jpg"
                 alt="principal"
                 className="h-56 w-56"
               />
@@ -605,26 +605,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <footer className="bg-gray-800 text-white py-4">
-          <div className="container mx-auto text-center">
-            <p className="text-sm">© 2024 College Name. All rights reserved.</p>
-            <p className="text-sm">
-              <a href="/about" className="hover:underline">
-                About
-              </a>{" "}
-              |
-              <a href="/contact" className="hover:underline">
-                {" "}
-                Contact
-              </a>{" "}
-              |
-              <a href="/privacy" className="hover:underline">
-                {" "}
-                Privacy Policy
-              </a>
-            </p>
-          </div>
-        </footer>
       </div>
     </>
   );
