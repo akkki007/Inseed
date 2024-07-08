@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Chart from "react-apexcharts";
 function Attendance() {
   // Sample data for attendance
   const [students, setStudents] = useState([
@@ -11,6 +11,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 85,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 2,
@@ -20,6 +56,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 72,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 3,
@@ -29,6 +101,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 90,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 4,
@@ -38,6 +146,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 65,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 5,
@@ -47,6 +191,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 78,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 6,
@@ -56,6 +236,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 92,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 7,
@@ -65,6 +281,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 70,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 8,
@@ -74,6 +326,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 84,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 9,
@@ -83,6 +371,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 88,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 10,
@@ -92,6 +416,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 60,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 11,
@@ -101,6 +461,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 79,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 12,
@@ -110,6 +506,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 73,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 13,
@@ -119,6 +551,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 91,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 14,
@@ -128,6 +596,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 82,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 15,
@@ -137,6 +641,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 68,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 16,
@@ -146,6 +686,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 87,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 17,
@@ -155,6 +731,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 83,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 18,
@@ -164,6 +776,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: false,
       attendancePercentage: 75,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 19,
@@ -173,6 +821,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 89,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
     {
       id: 20,
@@ -182,6 +866,42 @@ function Attendance() {
         "https://unsplash.com/photos/smiling-woman-standing-while-holding-orange-folder-FcLyt7lW5wg",
       present: true,
       attendancePercentage: 95,
+      state: {
+        options: {
+          chart: {
+            id: "Attendance",
+          },
+          xaxis: {
+            categories: [
+              "January ",
+              "Feburary",
+              "March",
+              "April ",
+              "May ",
+              "June ",
+              "July ",
+              "August ",
+              "September ",
+              "October ",
+              "november",
+              "December ",
+            ],
+          },
+        },
+        series: [
+          {
+            name: "Lecture",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50, 150, 175],
+          },
+          {
+            name: "Practical",
+            data: [
+              40, 50, 60, 70, 58, 48, 65, 95, 130, 50, 150, 25, 95, 96, 150,
+              179,
+            ],
+          },
+        ],
+      },
     },
   ]);
 
@@ -199,8 +919,8 @@ function Attendance() {
   };
 
   return (
-    <div className="flex h-screen">
-      <div className="w-64 bg-gray-100 p-4">
+    <div className="flex h-[90vh]">
+      <div className="w-64 bg-gray-100 p-4 ">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-lg font-bold">Attendence</h1>
           <div
@@ -228,7 +948,7 @@ function Attendance() {
           </li>
         </ul>
       </div>
-      <div className="flex-1 p-4 h-full overflow-scroll">
+      <div className="flex-1 p-4 h-[90vh] overflow-scroll">
         <div className="flex justify-between mb-4">
           <h2 className="text-2xl font-bold">Attendance</h2>
           {showDetails ? (
@@ -253,6 +973,13 @@ function Attendance() {
               <p>
                 Attendance Percentage : {selectedStudent.attendancePercentage}
               </p>
+              <Chart
+                options={selectedStudent.state.options}
+                series={selectedStudent.state.series}
+                type="line"
+                width={1000}
+                height={400}
+              />
             </div>
           </div>
         ) : (
