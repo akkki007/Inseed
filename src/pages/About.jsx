@@ -5,7 +5,7 @@ const About = () => {
       <div className="container w-screen">
         <div className="img w-screen flex">
           <img
-            src="public/loyola-university-chicago-lakeshore-campus-2400x750.jpg"
+            src="/loyola-university-chicago-lakeshore-campus-2400x750.jpg"
             alt="image"
           />
         </div>
@@ -497,107 +497,107 @@ const About = () => {
               </h1>
               <div className="image overflow-auto touch-y max-h-96 space-y-2 p-4">
                 <img
-                  src="public/galleryImage/g1.jpeg"
+                  src="/galleryImage/g1.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g2.jpeg"
+                  src="/galleryImage/g2.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g3.jpeg"
+                  src="/galleryImage/g3.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g4.jpeg"
+                  src="/galleryImage/g4.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g5.jpeg"
+                  src="/galleryImage/g5.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g6.jpeg"
+                  src="/galleryImage/g6.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g7.jpeg"
+                  src="/galleryImage/g7.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g8.jpeg"
+                  src="/galleryImage/g8.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g9.jpeg"
+                  src="/galleryImage/g9.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g10.jpeg"
+                  src="/galleryImage/g10.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g11.jpeg"
+                  src="/galleryImage/g11.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g12.jpeg"
+                  src="/galleryImage/g12.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g13.jpeg"
+                  src="/galleryImage/g13.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g14.jpeg"
+                  src="/galleryImage/g14.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g15.jpeg"
+                  src="/galleryImage/g15.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g16.jpeg"
+                  src="/galleryImage/g16.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g17.jpeg"
+                  src="/galleryImage/g17.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g18.jpeg"
+                  src="/galleryImage/g18.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g19.jpeg"
+                  src="/galleryImage/g19.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g20.jpeg"
+                  src="/galleryImage/g20.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
                 <img
-                  src="public/galleryImage/g21.jpeg"
+                  src="/galleryImage/g21.jpeg"
                   alt="image"
                   className="hover:opacity-75"
                 />
